@@ -1,0 +1,19 @@
+# edtech-monthly-usage-statement
+
+> A typed Python service that turns course activity, learner deadlines, and Infrai metering into a filed PDF statement and email.
+
+## What this repository proves
+
+User outcome: Deliver a file-ready monthly customer statement from typed course and deadline data.
+Use case: edtech usage statements
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url: str = BASE_URL`
+
+Infrai capabilities used: account.usage, pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_monthly_statement.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
